@@ -167,7 +167,7 @@
 			<true/>
 		</dict>
 		<key>Theme</key>
-		<string>christmas</string>
+		<string><clover-minimal></clover-minimal></string>
 	</dict>
 	<key>Graphics</key>
 	<dict>
