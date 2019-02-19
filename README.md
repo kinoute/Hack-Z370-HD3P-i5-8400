@@ -1,6 +1,6 @@
 # Hackintosh
 
-![System spec](https://raw.githubusercontent.com/kinoute/Hack-Z370-HD3P-i5-8400/Pictures/system.png)
+![System spec](https://raw.githubusercontent.com/kinoute/Hack-Z370-HD3P-i5-8400/master/Pictures/system.png)
 
 I built my Hackintosh because I was disappointed with the price of the new Mac Mini 2018. Its configuration is close to the new mid-entry Mac Mini but with more RAM (16 instead of 8 Gb). Here are the specs:
 
