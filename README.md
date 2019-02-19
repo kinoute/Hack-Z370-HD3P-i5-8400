@@ -1,13 +1,13 @@
 # Hackintosh
 
-![System spec](https://reho.st/self/87b57f7f6f9f3c44e059173dfce82cdc3e05cbb5.png)
+![System spec](https://raw.githubusercontent.com/kinoute/Hack-Z370-HD3P-i5-8400/Pictures/system.png)
 
 I built my Hackintosh because I was disappointed with the price of the new Mac Mini 2018. Its configuration is close to the new mid-entry Mac Mini but with more RAM (16 instead of 8 Gb). Here are the specs:
 
 - MacOS Mojave 10.14.3
 - Intel i5-8400 (6 cores @ 2.80 Ghz, 3.80 Ghz Turbo Boost)
 - Gigabyte Z370 HD3P
-- Corsair Vengeance LPX 16Gb (2x8Gb) DDR4 2666MHz OC @ 3066Mhz
+- Corsair Vengeance LPX 16Gb (2x8Gb) DDR4 2666MHz OC @ 3200Mhz
 - EVGA 600 W1, 80+ WHITE 600W
 - SSD SAMSUNG 830 Series 256 Gb
 - Various old HDDs
@@ -25,8 +25,8 @@ The only thing you need to generate by yourself if you use my EFI folder is your
 
 ## Benchmarks
 
-![Geekbench](https://reho.st/self/18c254cd50f126f4aab3d55717cc56c8d51e53ca.png)
+![Geekbench](https://raw.githubusercontent.com/kinoute/Hack-Z370-HD3P-i5-8400/Pictures/geekbench.png)
 
-Link: [https://browser.geekbench.com/v4/cpu/11742630](https://browser.geekbench.com/v4/cpu/11742630)
+Link: [https://browser.geekbench.com/v4/cpu/12097976](https://browser.geekbench.com/v4/cpu/12097976)
 
 
