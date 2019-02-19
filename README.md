@@ -1,6 +1,6 @@
 # Hackintosh
 
-![System spec](https://raw.githubusercontent.com/kinoute/Hack-Z370-HD3P-i5-8400/Pictures/system.png)
+![System spec](https://raw.githubusercontent.com/kinoute/Hack-Z370-HD3P-i5-8400/master/Pictures/system.png)
 
 I built my Hackintosh because I was disappointed with the price of the new Mac Mini 2018. Its configuration is close to the new mid-entry Mac Mini but with more RAM (16 instead of 8 Gb). Here are the specs:
 
@@ -25,7 +25,7 @@ The only thing you need to generate by yourself if you use my EFI folder is your
 
 ## Benchmarks
 
-![Geekbench](https://raw.githubusercontent.com/kinoute/Hack-Z370-HD3P-i5-8400/Pictures/geekbench.png)
+![Geekbench](https://raw.githubusercontent.com/kinoute/Hack-Z370-HD3P-i5-8400/master/Pictures/geekbench.png)
 
 Link: [https://browser.geekbench.com/v4/cpu/12097976](https://browser.geekbench.com/v4/cpu/12097976)
 
