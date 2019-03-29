@@ -4,7 +4,7 @@
 
 I built my Hackintosh because I was disappointed with the price of the new Mac Mini 2018. Its configuration is close to the new mid-entry Mac Mini but with more RAM (16 instead of 8 Gb). Here are the specs:
 
-- MacOS Mojave 10.14.3
+- MacOS Mojave 10.14.4
 - Intel i5-8400 (6 cores @ 2.80 Ghz, 3.80 Ghz Turbo Boost)
 - Gigabyte Z370 HD3P
 - Corsair Vengeance LPX 16Gb (2x8Gb) DDR4 2666MHz OC @ 3200Mhz
