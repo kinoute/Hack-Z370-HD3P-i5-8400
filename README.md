@@ -27,7 +27,7 @@ The only thing you need to generate by yourself if you use my EFI folder is your
 
 ## BIOS
 
-You can find my BIOS Settings as pictures in [this folder](BIOS).
+You can find my BIOS Settings as pictures in [BIOS.md](BIOS/BIOS.md).
 
 ## Benchmarks
 
