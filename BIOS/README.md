@@ -8,6 +8,8 @@ You can see my different settings in the BIOS with the pictures provided in this
 
 ![Frequency](https://raw.githubusercontent.com/kinoute/Hack-Z370-HD3P-i5-8400/master/BIOS/Frequency.jpg)
 
+**Note:** Don't use my RAM Settings blindlessly. See [below](#Memory).
+
 ## System
 
 ![System](https://raw.githubusercontent.com/kinoute/Hack-Z370-HD3P-i5-8400/master/BIOS/System.jpg)

@@ -25,6 +25,8 @@ You can basically download the config file provided at the end of the page (or m
 
 The only thing you need to generate by yourself if you use my EFI folder is your serial. You can use [macserial](https://github.com/acidanthera/macserial) to generate serials for the model you picked (I chose Macmini8,1 because my config is similar to the new Mac Mini model).
 
+**Note:** I use the [Clover-Minimal Theme](https://github.com/al3xtjames/clover-theme-minimal) in my `config.plist` so if you only download my `config.plist`, be sure to either install this theme or change it to something you already have.
+
 ## BIOS
 
 You can find my BIOS Settings with pictures [here](BIOS/README.md).
