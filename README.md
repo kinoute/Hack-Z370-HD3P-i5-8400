@@ -41,6 +41,6 @@ You can find my BIOS Settings with pictures [here](BIOS/README.md).
 
 ![Geekbench](https://raw.githubusercontent.com/kinoute/Hack-Z370-HD3P-i5-8400/master/Pictures/geekbench.png)
 
-Link: https://browser.geekbench.com/v4/cpu/13146116
+Link: https://browser.geekbench.com/v4/cpu/13487356
 
 
