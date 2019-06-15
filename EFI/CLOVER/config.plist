@@ -133,7 +133,7 @@
 				</data>
 				<key>framebuffer-con1-type</key>
 				<data>
-				AAIAAA==
+				BAAAAA==
 				</data>
 				<key>framebuffer-con2-enable</key>
 				<data>
@@ -227,7 +227,7 @@
 		<key>BoardSerialNumber</key>
 		<string></string>
 		<key>ProductName</key>
-		<string>Macmini8,1</string>
+		<string>iMac19,2</string>
 		<key>SerialNumber</key>
 		<string></string>
 		<key>SmUUID</key>

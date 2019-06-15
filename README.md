@@ -21,11 +21,11 @@ I built my Hackintosh because I was disappointed with the price of the new Mac M
 
 The installation was pretty straight forward. If you go like me with only the integrated Intel GPU (UHD 630), a Coffee Lake CPU, and this motherboard, just follow the [vanilla guide](https://hackintosh.gitbook.io/-r-hackintosh-vanilla-desktop-guide/) and read the "Coffee Lake" page carefully.
 
-You can basically download the config file provided at the end of the page, it works almost OOTB.
+You can basically download the config file provided at the end of the vanilla guide, it works almost OOTB.
 
 ## My EFI
 
-if you use my EFI folder & BIOS Settings, there are two things you need to do. First, you need to generate by yourself your serials and put them in your `config.plist`. You can use [macserial](https://github.com/acidanthera/macserial) to generate serials for the model you picked (I chose Macmini8,1 because my config is similar to the new Mac Mini model).
+if you use my EFI folder & BIOS Settings, there are two things you need to do. First, you need to generate by yourself your serials and put them in your `config.plist`. You can use [macserial](https://github.com/acidanthera/macserial) to generate serials for the model you picked. I first chose `Macmini8,1` because my config was similar to the new Mac Mini model but I recently changed my SMBIOS to `iMac19,2` due to the black screen issue I was having while watching videos in full screen.
 
 Secondly, I switched from using the USB Port limit patch to a custom SSDT. You can find my template file and the compiled `SSDT-UIAC.aml` file in the [SSDT Folder](SSDT). In my case, I decided to disable every port that are considered on the "front" as I only use the USB Ports on the back of the motherboard.
 
