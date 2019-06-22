@@ -12,7 +12,7 @@ I built my Hackintosh because I was disappointed with the price of the new Mac M
 - SSD SAMSUNG 830 Series 256 Gb
 - Various old HDDs
 - Apple Wired Keyboard
-- Random mouse
+- Microsoft Wireless Mobile Mouse 1000
 - M-Audio Fast Track Pro
 - Yamaha HS5
 - Random 24" 1080p monitor
@@ -29,7 +29,7 @@ if you use my EFI folder & BIOS Settings, there are two things you need to do. F
 
 Secondly, I switched from using the USB Port limit patch to a custom SSDT. You can find my template file and the compiled `SSDT-UIAC.aml` file in the [SSDT Folder](SSDT). In my case, I decided to disable every port that are considered on the "front" as I only use the USB Ports on the back of the motherboard.
 
-If you want to customize my template `.dsl ` file, do it with any text editor and compile it as an `.aml` file with [MaciASL](https://bitbucket.org/RehabMan/os-x-maciasl-patchmatic/downloads/). Then copy it to *EFI/CLOVER/ACPI/patched* folder. Reboot and if you see nothing wrong with your USB ports, you can disable the USB Ports Limit patchs in your `config.plist` (don't remove USBInjectAll.kext though).
+If you want to customize my template `.dsl` file, do it with any text editor and compile it as an `.aml` file with [MaciASL](https://bitbucket.org/RehabMan/os-x-maciasl-patchmatic/downloads/). Then copy it to *EFI/CLOVER/ACPI/patched* folder. Reboot and if you see nothing wrong with your USB ports, you can disable the USB Ports Limit patchs in your `config.plist` (don't remove USBInjectAll.kext though).
 
 **Note:** I use the [Clover-Minimal Theme](https://github.com/al3xtjames/clover-theme-minimal) in my `config.plist` so if you only download my `config.plist`, be sure to either install this theme or change it to something you already have.
 
