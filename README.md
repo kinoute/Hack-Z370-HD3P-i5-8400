@@ -4,7 +4,7 @@
 
 I built my Hackintosh because I was disappointed with the price of the new Mac Mini 2018. Its configuration is close to the new mid-entry Mac Mini but with more RAM (16 instead of 8 Gb). Here are the specs:
 
-- MacOS Mojave 10.14.5
+- MacOS Mojave 10.14.6
 - Intel i5-8400 (6 cores @ 2.80 Ghz, 3.80 Ghz Turbo Boost)
 - Gigabyte Z370-HD3P
 - Corsair Vengeance LPX 16Gb (2x8Gb) DDR4 2666MHz OC @ 3200 Mhz (CMK16GX4M2A2666C16)
@@ -25,7 +25,7 @@ You can basically download the config file provided at the end of the vanilla gu
 
 ## My EFI
 
-if you use my EFI folder & BIOS Settings, there are two things you need to do. First, you need to generate by yourself your serials and put them in your `config.plist`. You can use [macserial](https://github.com/acidanthera/macserial) to generate serials for the model you picked. I first chose `Macmini8,1` because my config was similar to the new Mac Mini model but I recently changed my SMBIOS to `iMac19,2` due to the black screen issue I was having while watching videos in full screen.
+if you use my EFI folder & BIOS Settings, there are two things you need to do. First, you need to generate by yourself your serials and put them in your `config.plist`. You can use [macserial](https://github.com/acidanthera/macserial) to generate serials for the model you picked. I first chose `Macmini8,1` because my config was similar to the new Mac Mini model but I recently changed my SMBIOS to `iMac19,2` due to the black screen issue I was having while watching videos in full screen. (**Update:** Apparently this was a bug on macOS and it has been fixed in 10.14.6)
 
 Secondly, I switched from using the USB Port limit patch to a custom SSDT. You can find my template file and the compiled `SSDT-UIAC.aml` file in the [SSDT Folder](SSDT). In my case, I decided to disable every port that are considered on the "front" as I only use the USB Ports on the back of the motherboard.
 
@@ -41,6 +41,6 @@ You can find my BIOS Settings with pictures [here](BIOS/README.md).
 
 ![Geekbench](https://raw.githubusercontent.com/kinoute/Hack-Z370-HD3P-i5-8400/master/Pictures/geekbench.png)
 
-Link: https://browser.geekbench.com/v4/cpu/13487356
+Link: https://browser.geekbench.com/v4/cpu/14018360
 
 
