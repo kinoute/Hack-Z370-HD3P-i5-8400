@@ -23,6 +23,8 @@ The installation was pretty straight forward. If you go like me with only the in
 
 You can basically download the config file provided at the end of the vanilla guide, it works almost OOTB.
 
+**Note:** My EFI Folder was made for "old" versions of Clover. By old I mean the **r4972** version, _maximum_. Why? Apparently, Clover recently changed their folders structure. Therefore, if you install any (new) Clover version, you might need to adjust manually where kexts files are going, my EFI Folder won't work OOTB. Since this repo is for Mojave for the time being, there is no need to use a recent Clover version. A different repo/branch will be made for Catalina with an updated Clover installation and structure.
+
 ## My EFI
 
 if you use my EFI folder & BIOS Settings, there are two things you need to do. First, you need to generate by yourself your serials and put them in your `config.plist`. You can use [macserial](https://github.com/acidanthera/macserial) to generate serials for the model you picked. I first chose `Macmini8,1` because my config was similar to the new Mac Mini model but I recently changed my SMBIOS to `iMac19,2` due to the black screen issue I was having while watching videos in full screen. (**Update:** Apparently this was a bug on macOS and it has been fixed in 10.14.6).
