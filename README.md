@@ -25,9 +25,22 @@ You can basically download the config file provided at the end of the vanilla gu
 
 ## My EFI
 
-**Note:** My EFI Folder was made to work on "old" versions of Clover. By old I mean the **r4972** version, _maximum_. Why? Apparently, Clover recently changed their folders structure. Therefore, if you install any (new) Clover version, you might need to adjust manually where kexts files are going, my EFI Folder won't work OOTB. Since this repo is for Mojave for the time being, there is no need to use a recent Clover version. A different repo/branch will be made for Catalina with an updated Clover installation and structure.
+* **Clover version**: v2.5k r5070
+* **UEFI Drivers** (now located in `EFI/Clover/drivers/UEFI`):
+    - ApfsDriverLoader.efi
+    - AptioMemoryFix.efi
+    - HFSPlus.efi
+* Kexts (in `EFI/Clover/kexts/Other`):
+    - AppleALC.kext
+    - IntelMausiEthernet.kext
+    - Lilu.kext
+    - SMCProcessor.kext
+    - SMCSuperIO.kext
+    - USBInjectAll.kext
+    - VirtualSMC.kext
+    - WhateverGreen.kext
 
-if you use my EFI folder & BIOS Settings, there are two things you need to do. First, you need to generate by yourself your serials and put them in your `config.plist`. You can use [macserial](https://github.com/acidanthera/macserial) to generate serials for the model you picked. I first chose `Macmini8,1` because my config was similar to the new Mac Mini model but I recently changed my SMBIOS to `iMac19,2` due to the black screen issue I was having while watching videos in full screen. (**Update:** Apparently this was a bug on macOS and it has been fixed in 10.14.6).
+if you use my EFI folder & BIOS Settings, there are two things you need to do. First, you need to generate by yourself your serials and put them in the `config.plist`. You can use [macserial](https://github.com/acidanthera/macserial) to generate serials for the model you picked. I first chose `Macmini8,1` because my config was similar to the new Mac Mini model but I recently changed my SMBIOS to `iMac19,2` due to the black screen issue I was having while watching videos in full screen. (**Update:** Apparently this was a bug on macOS and it has been fixed in 10.14.6).
 
 Secondly, I switched from using the USB Port limit patch to a custom SSDT. You can find my template file and the compiled `SSDT-UIAC.aml` file in the [SSDT Folder](SSDT). In my case, I decided to disable every port that are considered on the "front" as I only use the USB Ports on the back of the motherboard.
 
