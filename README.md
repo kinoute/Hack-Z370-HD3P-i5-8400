@@ -27,18 +27,18 @@ You can basically download the config file provided at the end of the vanilla gu
 
 * **Clover version**: v2.5k r5070
 * **UEFI Drivers** (now located in `EFI/Clover/drivers/UEFI`):
-    - ApfsDriverLoader.efi
-    - AptioMemoryFix.efi
-    - HFSPlus.efi
-* Kexts (in `EFI/Clover/kexts/Other`):
-    - AppleALC.kext
-    - IntelMausiEthernet.kext
-    - Lilu.kext
-    - SMCProcessor.kext
-    - SMCSuperIO.kext
-    - USBInjectAll.kext
-    - VirtualSMC.kext
-    - WhateverGreen.kext
+    - _ApfsDriverLoader.efi_
+    - _AptioMemoryFix.efi_
+    - _HFSPlus.efi_
+* **Kexts** (in `EFI/Clover/kexts/Other`):
+    - _AppleALC.kext_
+    - _IntelMausiEthernet.kext_
+    - _Lilu.kext_
+    - _SMCProcessor.kext_
+    - _SMCSuperIO.kext_
+    - _USBInjectAll.kext_
+    - _VirtualSMC.kext_
+    - _WhateverGreen.kext_
 
 if you use my EFI folder & BIOS Settings, there are two things you need to do. First, you need to generate by yourself your serials and put them in the `config.plist`. You can use [macserial](https://github.com/acidanthera/macserial) to generate serials for the model you picked. I first chose `Macmini8,1` because my config was similar to the new Mac Mini model but I recently changed my SMBIOS to `iMac19,2` due to the black screen issue I was having while watching videos in full screen. (**Update:** Apparently this was a bug on macOS and it has been fixed in 10.14.6).
 
