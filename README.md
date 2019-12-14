@@ -42,10 +42,6 @@ You can basically download the config file provided at the end of the vanilla gu
 
 if you use my EFI folder & BIOS Settings, there are two things you need to do. First, you need to generate by yourself your serials and put them in the `config.plist`. You can use [macserial](https://github.com/acidanthera/macserial) to generate serials for the model you picked. I first chose `Macmini8,1` because my config was similar to the new Mac Mini model but I recently changed my SMBIOS to `iMac19,2` due to the black screen issue I was having while watching videos in full screen. (**Update:** Apparently this was a bug on macOS and it has been fixed in 10.14.6).
 
-Secondly, I switched from using the USB Port limit patch to a custom SSDT. You can find my template file and the compiled `SSDT-UIAC.aml` file in the [SSDT Folder](SSDT). In my case, I decided to disable every port that are considered on the "front" as I only use the USB Ports on the back of the motherboard.
-
-If you want to customize my template `.dsl` file, do it with any text editor and compile it as an `.aml` file with [MaciASL](https://bitbucket.org/RehabMan/os-x-maciasl-patchmatic/downloads/). Then copy it to *EFI/CLOVER/ACPI/patched* folder. Reboot and if you see nothing wrong with your USB ports, you can disable the USB Ports Limit patchs in your `config.plist` (don't remove USBInjectAll.kext though).
-
 **Note:** I use the [Clover-Minimal Theme](https://github.com/al3xtjames/clover-theme-minimal) in my `config.plist` so if you only download my `config.plist`, be sure to either install this theme or change it to something you already have.
 
 ## BIOS
