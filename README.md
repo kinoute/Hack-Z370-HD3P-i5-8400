@@ -23,6 +23,10 @@ The installation was pretty straight forward. If you go like me with only the in
 
 You can basically download the config file provided at the end of the vanilla guide, it works almost OOTB.
 
+## BIOS
+
+You can find my BIOS Settings with pictures [here](BIOS/README.md).
+
 ## My EFI
 
 * **Clover version**: v2.5k r5070
@@ -44,9 +48,40 @@ if you use my EFI folder & BIOS Settings, there are two things you need to do. F
 
 **Note:** I use the [Clover-Minimal Theme](https://github.com/al3xtjames/clover-theme-minimal) in my `config.plist` so if you only download my `config.plist`, be sure to either install this theme or change it to something you already have.
 
-## BIOS
+## What works
 
-You can find my BIOS Settings with pictures [here](BIOS/README.md).
+* UHD 630 Integrated Graphics
+* Turbo Boost
+* Ethernet
+* USB 2 / USB 3 Ports
+* HDMI Out
+* DVI-D Out
+* Sleep / Wake up
+* Sound (see below)
+
+## Sound
+
+As I mentioned in my setup above, I use an USB Audio interface for input/output. Therefore, I don't use that much (almost never) the inputs/outputs provided on the back of the motherboard.
+
+Nevertheless, this EFI/config.plist should allow you to use sound I/O provided by the motherboard without any problem. 
+
+With the AppleALC layout id set to "1" (already done in my `config.plist`), I was able to use:
+
+* my headphones ;
+* a microphone ;
+* also the "Line In" to send music from my smartphone to macOS.
+
+To use the sound inputs/ouputs of this motherboard, I did:
+
+* Set `alcid` clover boot options to "1" (already done here) ;
+* Use the "Pink" input (Mic In) for my microphone (and set "Built-in Microphone" in macOS Sound Settings) ;
+* Use the "Green" input (Line Out) for my headphones (and set "Built-in Speakers" in macOS Sound Settings) ;
+* Use the "Blue" input (Line In) to send sound to my Hack ("Built-in Line In" in macOS).
+
+![](Pictures/sound.png)
+
+![](Pictures/sound-2.png)
+
 
 ## Benchmarks
 
