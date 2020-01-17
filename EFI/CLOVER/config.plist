@@ -95,7 +95,7 @@
 		<key>Audio</key>
 		<dict>
 			<key>AFGLowPowerState</key>
-			<false/>
+			<true/>
 			<key>Inject</key>
 			<string>No</string>
 			<key>ResetHDA</key>
@@ -184,6 +184,8 @@
 				<false/>
 				<key>Find</key>
 				<data>g/sPDw==</data>
+				<key>InfoPlistPatch</key>
+				<false/>
 				<key>MatchOS</key>
 				<string>10.14.6</string>
 				<key>Name</key>
@@ -198,6 +200,8 @@
 				<false/>
 				<key>Find</key>
 				<data>g/sPDw==</data>
+				<key>InfoPlistPatch</key>
+				<false/>
 				<key>MatchOS</key>
 				<string>10.14.6</string>
 				<key>Name</key>
@@ -212,6 +216,8 @@
 				<false/>
 				<key>Find</key>
 				<data>g+MP0w==</data>
+				<key>InfoPlistPatch</key>
+				<false/>
 				<key>MatchOS</key>
 				<string>10.14.6</string>
 				<key>Name</key>
