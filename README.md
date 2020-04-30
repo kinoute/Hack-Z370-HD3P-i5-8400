@@ -21,7 +21,7 @@ I built my Hackintosh because I was disappointed with the price of the new Mac M
 
 The installation was pretty straight forward. If you go like me with only the integrated Intel GPU (UHD 630), a Coffee Lake CPU, and this motherboard, just follow the [vanilla guide](https://hackintosh.gitbook.io/-r-hackintosh-vanilla-desktop-guide/) and read the "Coffee Lake" page carefully.
 
-You can basically download the config file provided at the end of the vanilla guide, it works almost OOTB.
+You can basically download the config file provided at the end of the vanilla guide, it works almost OOTB. Or you can download mine, see below.
 
 ## BIOS
 
