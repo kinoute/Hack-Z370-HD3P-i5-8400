@@ -25,7 +25,7 @@ You can basically download the config file provided at the end of the vanilla gu
 
 ## BIOS
 
-I'm running the BIOS *F11* version. You can find my BIOS Settings with pictures [here](BIOS/README.md). 
+I'm running the BIOS **F11** version. You can find my BIOS Settings with pictures [here](BIOS/README.md). 
 
 If you are using a version older than F11, be careful if you want to update your BIOS to F11 or newer. They changed something and you have to add an ACPI Patch in your `config.plist` before the update, otherwise macOS won't boot.
 
@@ -90,6 +90,11 @@ To use the sound inputs/ouputs of this motherboard, I did:
 
 ![](Pictures/sound-2.png)
 
+## Future & Catalina
+
+With OpenCore getting better every day, it could be interesting to switch and also upgrade to Catalina. But as I still have to deal with a few 32-bits applications or plug-ins, I can't upgrade to 10.15 for now.
+
+Nevertheless, this config should get you a working setup on Catalina with a few minors changes.
 
 ## Benchmarks
 
