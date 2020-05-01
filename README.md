@@ -25,7 +25,11 @@ You can basically download the config file provided at the end of the vanilla gu
 
 ## BIOS
 
-You can find my BIOS Settings with pictures [here](BIOS/README.md).
+I'm running the BIOS *F11* version. You can find my BIOS Settings with pictures [here](BIOS/README.md). 
+
+If you are using a version older than F11, be careful if you want to update your BIOS to F11 or newer. They changed something and you have to add an ACPI Patch in your `config.plist` before the update, otherwise macOS won't boot.
+
+This is already done in my `config.plist` available in this repo as of April 30th, 2020.
 
 ## My EFI
 
@@ -44,7 +48,11 @@ You can find my BIOS Settings with pictures [here](BIOS/README.md).
     - _VirtualSMC.kext_
     - _WhateverGreen.kext_
 
-if you use my EFI folder & BIOS Settings, there are two things you need to do. First, you need to generate by yourself your serials and put them in the `config.plist`. You can use [macserial](https://github.com/acidanthera/macserial) to generate serials for the model you picked. I first chose `Macmini8,1` because my config was similar to the new Mac Mini model but I recently changed my SMBIOS to `iMac19,2` due to the black screen issue I was having while watching videos in full screen. (**Update:** Apparently this was a bug on macOS and it has been fixed in 10.14.6).
+If you use my EFI folder & BIOS Settings, you need to generate by yourself your serials and put them in the `config.plist`. You can use [macserial](https://github.com/acidanthera/macserial) to generate serials for the model you picked.
+
+I first chose `Macmini8,1` because my config was similar to the new Mac Mini model but I recently changed my SMBIOS to `iMac19,2` due to the black screen issue I was having while watching videos in full screen. (**Update:** Apparently this was a bug on macOS and it has been fixed in 10.14.6).
+
+`iMac19,2` seems better for power management and upgradability (in case you want to add a dedicated GPU later). This is the SMBIOS used in this config.
 
 **Note:** I use the [Clover-Minimal Theme](https://github.com/al3xtjames/clover-theme-minimal) in my `config.plist` so if you only download my `config.plist`, be sure to either install this theme or change it to something you already have.
 
@@ -63,7 +71,7 @@ if you use my EFI folder & BIOS Settings, there are two things you need to do. F
 
 As I mentioned in my setup above, I use an USB Audio interface for input/output. Therefore, I don't use that much (almost never) the inputs/outputs provided on the back of the motherboard.
 
-Nevertheless, this EFI/config.plist should allow you to use sound I/O provided by the motherboard without any problem. 
+Nevertheless, this repo should allow you to use sound I/O provided by the motherboard without any problem. 
 
 With the AppleALC layout id set to "1" (already done in my `config.plist`), I was able to use:
 
