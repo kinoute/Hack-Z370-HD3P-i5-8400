@@ -1,6 +1,6 @@
 # BIOS
 
-**Version:** F11
+**Version:** F14a
 
 You can see my different settings in the BIOS with the pictures provided in this folder.
 
