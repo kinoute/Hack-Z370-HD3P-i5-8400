@@ -1,10 +1,20 @@
 # Hackintosh
 
+A Hackintosh running macOS 10.15.6 with a i5-8400 and a Gigabyte Z370-HD3P.
+
 ![System spec](https://raw.githubusercontent.com/kinoute/Hack-Z370-HD3P-i5-8400/master/Pictures/system.png)
+
+## Status
+
+I recently updated my Hackintosh from Mojave 10.14.6 to Catalina 10.15.6. **My files available here work on both platforms**. I actually didn't change anything in my `config.plist`.
+
+**Important:** If you wish to upgrade to Catalina just like I did, the only thing you need to do is to install/use a recent version of Clover, at least Clover v5.0 r5107. I personally use [Clover v5.0 r5119](https://github.com/Dids/clover-builder/releases/tag/v5.0_r5119).
+
+## Motivation
 
 I built my Hackintosh because I was disappointed with the price of the new Mac Mini 2018. Its configuration is close to the new mid-entry Mac Mini but with more RAM (16 instead of 8 Gb). Here are the specs:
 
-- MacOS Mojave 10.14.6
+- macOS Catalina 10.15.6
 - Intel i5-8400 (6 cores @ 2.80 Ghz, 3.80 Ghz Turbo Boost)
 - Gigabyte Z370-HD3P
 - Corsair Vengeance LPX 16Gb (2x8Gb) DDR4 2666MHz OC @ 3200 Mhz (CMK16GX4M2A2666C16)
@@ -33,7 +43,7 @@ This is already done in my `config.plist` available in this repo as of April 30t
 
 ## My EFI
 
-* **Clover version**: v2.5k r5070
+* **Clover version**: v5.0 r5119
 * **UEFI Drivers** (now located in `EFI/Clover/drivers/UEFI`):
     - _ApfsDriverLoader.efi_
     - _AptioMemoryFix.efi_
@@ -90,16 +100,22 @@ To use the sound inputs/ouputs of this motherboard, I did:
 
 ![](Pictures/sound-2.png)
 
-## Future & Catalina
+## Font on non-retina displays
 
-With OpenCore getting better every day, it could be interesting to switch and also upgrade to Catalina. But as I still have to deal with a few 32-bits applications or plug-ins, I can't upgrade to 10.15 for now.
+For some people, after upgrading to Catalina, the font can look blurry or too thin on non-retina displays. I use a very old 24" 1080p monitor and I encountered this problem.
 
-Nevertheless, this config should get you a working setup on Catalina with a few minors changes.
+To get a somewhat similar font rendering as before, you can use these following two command lines that you have to type in your Terminal:
+
+```bash
+defaults -currentHost delete -globalDomain AppleFontSmoothing
+defaults write -g CGFontRenderingFontSmoothingDisabled -bool YES
+```
+
+Then restart your Hackintosh. It should look better.
 
 ## Benchmarks
 
 ![Geekbench](https://raw.githubusercontent.com/kinoute/Hack-Z370-HD3P-i5-8400/master/Pictures/geekbench.png)
 
-Link: https://browser.geekbench.com/v4/cpu/14018360
-
+Link: https://browser.geekbench.com/v4/cpu/15697612
 
