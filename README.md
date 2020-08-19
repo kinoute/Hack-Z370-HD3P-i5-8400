@@ -77,7 +77,7 @@ I first chose `Macmini8,1` because my config was similar to the new Mac Mini mod
 * Turbo Boost
 * Ethernet
 * USB 2 / USB 3 Ports
-* HDMI Out (with audio)
+* HDMI Out (without audio on 10.15, see [Status](#Status))
 * DVI-D Out
 * Sleep / Wake up
 * Sound (see below)
