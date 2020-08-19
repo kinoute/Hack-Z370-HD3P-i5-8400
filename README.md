@@ -72,14 +72,14 @@ I first chose `Macmini8,1` because my config was similar to the new Mac Mini mod
 * Turbo Boost
 * Ethernet
 * USB 2 / USB 3 Ports
-* HDMI Out
+* HDMI Out (with audio)
 * DVI-D Out
 * Sleep / Wake up
 * Sound (see below)
 
 ## Sound
 
-As I mentioned in my setup above, I use an USB Audio interface for input/output. Therefore, I don't use that much (almost never) the inputs/outputs provided on the back of the motherboard.
+As I mentioned in my setup above, I use a USB Audio interface for input/output. Therefore, I don't use that much (almost never) the inputs/outputs provided on the back of the motherboard.
 
 Nevertheless, this repo should allow you to use sound I/O provided by the motherboard without any problem. 
 
@@ -104,7 +104,7 @@ To use the sound inputs/ouputs of this motherboard, I did:
 
 For some people, after upgrading to Catalina, the font can look blurry or too thin on non-retina displays. I use a very old 24" 1080p monitor and I encountered this problem.
 
-To get a somewhat similar font rendering as before, you can use these following two command lines that you have to type in your Terminal:
+To get a somewhat similar font rendering as before, you can use the following two command lines that you have to type in your Terminal:
 
 ```bash
 defaults -currentHost delete -globalDomain AppleFontSmoothing
