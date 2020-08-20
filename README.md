@@ -8,7 +8,7 @@ A Hackintosh running macOS 10.15.6 with a i5-8400 and a Gigabyte Z370-HD3P.
 
 I recently updated my Hackintosh from Mojave 10.14.6 to Catalina 10.15.6. **My files available here should work on both platforms**. I changed two things in my `config.plist` to fix Catalina:
 
-* I added ` igfxln=1` to the boot arguments because I was getting a black screen after waking up from sleep. It fixed the problem but AppleALC, the kext that handles the Audio, was crashing my system (Kernel Panic) after waking up.
+* I added ` igfxonln=1` to the boot arguments because I was getting a black screen after waking up from sleep. It fixed the problem but AppleALC, the kext that handles the Audio, was crashing my system (Kernel Panic) after waking up.
 * To avoid the Kernel Panic after waking up, I had to disable the audio through HDMI. Since I don't use it, it was not a problem. To do that, I set-up the `No-hda-gfx`property in my `config.plist`file. It fixed the issue.
 
 I didn't have these problems on Mojave so you might not need these two changes. If you encounter problems with these changes on Mojave, simply remove them from the `config.plist`file and everything should be fine.
