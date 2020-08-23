@@ -11,7 +11,7 @@ I recently updated my Hackintosh from Mojave 10.14.6 to Catalina 10.15.6. You ca
 If you're curious, I changed three things in my `config.plist` to fix Catalina:
 
 * I added ` igfxonln=1` to the boot arguments because I was getting a black screen after waking up from sleep. It fixed the problem but AppleALC, the kext that handles the Audio, was crashing my system (Kernel Panic) after waking up.
-* To avoid the Kernel Panic after waking up, I had to disable the audio through HDMI. Since I don't use it, it was not a problem. To do that, I set-up the  `No-hda-gfx` property in my `config.plist`file. It fixed the issue.
+* To avoid the Kernel Panic after waking up, I had to disable the audio through HDMI. Since I don't use it, it was not a problem. To do that, I set-up the  `No-hda-gfx` property in my `config.plist` file. It fixed the issue.
 * I had to remove the old USB ports limit patch for Mojave and add a new one for Catalina. You can find it [here](https://www.tonymacx86.com/threads/macos-catalina-10-15-0-usb-port-limit-removal-patch.285098/).
 
 **Important:** If you wish to upgrade to Catalina just like I did, don't forget to install/use a recent version of Clover, at least Clover v5.0 r5107. I personally use [Clover v5.0 r5119](https://github.com/Dids/clover-builder/releases/tag/v5.0_r5119).
