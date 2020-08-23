@@ -193,66 +193,32 @@
 				<data>SW50ZXJuYWw=</data>
 			</dict>
 			<dict>
-				<key>Comment</key>
-				<string>USB Port Limit Patch#1 10.14.4 ©PMHeart</string>
-				<key>Disabled</key>
+				<key>InfoPlistPatch</key>
 				<false/>
 				<key>Find</key>
 				<data>g/sPDw==</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>MatchOS</key>
-				<string>10.14.6</string>
 				<key>Name</key>
 				<string>com.apple.iokit.IOUSBHostFamily</string>
 				<key>Replace</key>
 				<data>g/s/Dw==</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>USB Port Limit Patch#2 10.14.4 ©PMHeart</string>
 				<key>Disabled</key>
 				<false/>
-				<key>Find</key>
-				<data>g/sPDw==</data>
+				<key>MatchOS</key>
+				<string>10.15.6</string>
+			</dict>
+			<dict>
 				<key>InfoPlistPatch</key>
 				<false/>
-				<key>MatchOS</key>
-				<string>10.14.6</string>
+				<key>Find</key>
+				<data>g/kPDw==</data>
 				<key>Name</key>
 				<string>com.apple.driver.usb.AppleUSBXHCI</string>
 				<key>Replace</key>
-				<data>g/s/Dw==</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>USB Port Limit Patch#3 10.14.4 ©PMHeart</string>
+				<data>g/k/Dw==</data>
 				<key>Disabled</key>
 				<false/>
-				<key>Find</key>
-				<data>g+MP0w==</data>
-				<key>InfoPlistPatch</key>
-				<false/>
 				<key>MatchOS</key>
-				<string>10.14.6</string>
-				<key>Name</key>
-				<string>com.apple.iokit.IOUSBHostFamily</string>
-				<key>Replace</key>
-				<data>g+M/0w==</data>
-			</dict>
-			<dict>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>g/8PDw==</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>MatchOS</key>
-				<string>10.14.6</string>
-				<key>Name</key>
-				<string>com.apple.driver.usb.AppleUSBXHCI</string>
-				<key>Replace</key>
-				<data>g/8/Dw==</data>
+				<string>10.15.6</string>
 			</dict>
 		</array>
 	</dict>
