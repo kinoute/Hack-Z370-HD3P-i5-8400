@@ -6,12 +6,13 @@ A Hackintosh running macOS 10.15.6 with a i5-8400 and a Gigabyte Z370-HD3P.
 
 ## Status
 
-I recently updated my Hackintosh from Mojave 10.14.6 to Catalina 10.15.6. **My files available here should work on both platforms**. I changed two things in my `config.plist` to fix Catalina:
+I recently updated my Hackintosh from Mojave 10.14.6 to Catalina 10.15.6. You can find the latest and final EFI Folder for Mojave [here](https://github.com/kinoute/Hack-Z370-HD3P-i5-8400/releases/tag/v1.0).
+
+If you're curious, I changed three things in my `config.plist` to fix Catalina:
 
 * I added ` igfxonln=1` to the boot arguments because I was getting a black screen after waking up from sleep. It fixed the problem but AppleALC, the kext that handles the Audio, was crashing my system (Kernel Panic) after waking up.
 * To avoid the Kernel Panic after waking up, I had to disable the audio through HDMI. Since I don't use it, it was not a problem. To do that, I set-up the  `No-hda-gfx` property in my `config.plist`file. It fixed the issue.
-
-I didn't have these problems on Mojave so you might not need these two changes. If you encounter problems with these changes on Mojave, simply remove them from the `config.plist`file and everything should be fine. Or you can also download my *final* EFI Folder for Mojave [here](https://github.com/kinoute/Hack-Z370-HD3P-i5-8400/releases/tag/v1.0).
+* I had to remove the old USB ports limit patch for Mojave and add a new one for Catalina. You can find it [here](https://www.tonymacx86.com/threads/macos-catalina-10-15-0-usb-port-limit-removal-patch.285098/).
 
 **Important:** If you wish to upgrade to Catalina just like I did, don't forget to install/use a recent version of Clover, at least Clover v5.0 r5107. I personally use [Clover v5.0 r5119](https://github.com/Dids/clover-builder/releases/tag/v5.0_r5119).
 
