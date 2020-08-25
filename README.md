@@ -8,11 +8,10 @@ A Hackintosh running macOS 10.15.6 with a i5-8400 and a Gigabyte Z370-HD3P.
 
 I recently updated my Hackintosh from Mojave 10.14.6 to Catalina 10.15.6. You can find the latest and final EFI Folder for Mojave [here](https://github.com/kinoute/Hack-Z370-HD3P-i5-8400/releases/tag/v1.0).
 
-If you're curious, I changed three things in my `config.plist` to fix Catalina:
+If you're curious, I changed two things in my `config.plist` to fix Catalina:
 
 * I added ` igfxonln=1` to the boot arguments because I was getting a black screen after waking up from sleep. It fixed the problem but AppleALC, the kext that handles the Audio, was crashing my system (Kernel Panic) after waking up.
 * To avoid the Kernel Panic after waking up, I had to disable the audio through HDMI. Since I don't use it, it was not a problem. To do that, I set-up the  `No-hda-gfx` property in my `config.plist` file. It fixed the issue.
-* I had to remove the old USB ports limit patch for Mojave and add a new one for Catalina. You can find it [here](https://www.tonymacx86.com/threads/macos-catalina-10-15-0-usb-port-limit-removal-patch.285098/).
 
 **Important:** If you wish to upgrade to Catalina just like I did, don't forget to install/use a recent version of Clover, at least Clover v5.0 r5107. I personally use [Clover v5.0 r5119](https://github.com/Dids/clover-builder/releases/tag/v5.0_r5119).
 
@@ -60,7 +59,6 @@ This is already done in my `config.plist` available in this repo as of April 30t
     - _Lilu.kext_
     - _SMCProcessor.kext_
     - _SMCSuperIO.kext_
-    - _USBInjectAll.kext_
     - _VirtualSMC.kext_
     - _WhateverGreen.kext_
 
@@ -77,11 +75,21 @@ I first chose `Macmini8,1` because my config was similar to the new Mac Mini mod
 * UHD 630 Integrated Graphics
 * Turbo Boost
 * Ethernet
-* USB 2 / USB 3 Ports
+* USB 2 / USB 3 Ports (see [USB Ports](#USB Ports))
 * HDMI Out (without audio on 10.15, see [Status](#Status))
 * DVI-D Out
 * Sleep / Wake up
-* Sound (see below)
+* Sound (see [Sound](#Sound))
+
+## USB Ports
+
+I created my own kext with Hackintool to map all the USB Ports on the back of the motherboard. You can find it in my EFI folder, it's called *USBPorts.kext*.
+
+Both USB 2 and USB 3 ports are working. The USB 3.1 port is also working OOTB. For USB 3 ports, you can also use USB 2 devices on them, it will work. Here are all the ports enabled and working (except USB-C, not tested):
+
+![usb-ports](images/usb-ports.jpg)
+
+If you have a case with USB ports on front or if you want to use an internal card for bluetooth, you will have to edit my kext to enable them. You then might have to choose exactly what ports you want to be able to use because you will quickly reach the 15 ports limit.
 
 ## Sound
 
