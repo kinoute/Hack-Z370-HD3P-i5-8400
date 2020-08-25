@@ -87,7 +87,7 @@ I created my own kext with Hackintool to map all the USB Ports on the back of th
 
 Both USB 2 and USB 3 ports are working. The USB 3.1 port is also working OOTB. For USB 3 ports, you can also use USB 2 devices on them, it will work. Here are all the ports enabled and working (except USB-C, not tested):
 
-![usb-ports](images/usb-ports.jpg)
+![usb-ports](Pictures/usb-ports.jpg)
 
 If you have a case with USB ports on front or if you want to use an internal card for bluetooth, you will have to edit my kext to enable them. You then might have to choose exactly what ports you want to be able to use because you will quickly reach the 15 ports limit.
 
