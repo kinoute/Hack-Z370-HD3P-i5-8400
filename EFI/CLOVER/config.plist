@@ -192,34 +192,6 @@
 				<key>Replace</key>
 				<data>SW50ZXJuYWw=</data>
 			</dict>
-			<dict>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>Find</key>
-				<data>g/sPDw==</data>
-				<key>Name</key>
-				<string>com.apple.iokit.IOUSBHostFamily</string>
-				<key>Replace</key>
-				<data>g/s/Dw==</data>
-				<key>Disabled</key>
-				<false/>
-				<key>MatchOS</key>
-				<string>10.15.6</string>
-			</dict>
-			<dict>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>Find</key>
-				<data>g/kPDw==</data>
-				<key>Name</key>
-				<string>com.apple.driver.usb.AppleUSBXHCI</string>
-				<key>Replace</key>
-				<data>g/k/Dw==</data>
-				<key>Disabled</key>
-				<false/>
-				<key>MatchOS</key>
-				<string>10.15.6</string>
-			</dict>
 		</array>
 	</dict>
 	<key>RtVariables</key>
