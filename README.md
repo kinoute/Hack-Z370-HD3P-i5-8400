@@ -83,7 +83,7 @@ I first chose `Macmini8,1` because my config was similar to the new Mac Mini mod
 
 ## USB Ports
 
-I created my own kext with Hackintool to map all the USB Ports on the back of the motherboard. You can find it in my EFI folder, it's called *USBPorts.kext*. **You don't need _USBInjectAll.kext_ anymore**.
+I created my own kext with Hackintool to map all the USB Ports on the back of the motherboard. You can find it in my EFI folder, it's called *USBPorts.kext*. **You don't need _USBInjectAll_ or the patch limit anymore**.
 
 Both USB 2 and USB 3 ports are working. The USB 3.1 port is also working OOTB. For USB 3 ports, you can also use USB 2 devices on them, it will work. Here are all the ports enabled and working (except USB-C, not tested):
 
