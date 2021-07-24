@@ -6,7 +6,13 @@ A Hackintosh running macOS 10.15.7 with a i5-8400 and a Gigabyte Z370-HD3P.
 
 ## Status
 
-I recently updated my Hackintosh from Mojave 10.14.6 to Catalina 10.15.7. You can find the latest and final EFI Folder for Mojave [here](https://github.com/kinoute/Hack-Z370-HD3P-i5-8400/releases/tag/v1.0).
+### Jul 24, 2021: Clover to Opencore 0.7.1 (Catalina)
+
+I finally switched from Clover to OpenCore in order to prepare the upgrade to macOS Big Sur in a few weeks (if everything is stable). You can find the final EFI Folder running Clover for Catalina 10.15.7 [here](https://github.com/kinoute/Hack-Z370-HD3P-i5-8400/releases/tag/v2.0) or browse the repo for this old version [here](https://github.com/kinoute/Hack-Z370-HD3P-i5-8400/tree/clover-catalina-10-15-7).
+
+### Aug 18, 2020: Mojave to Catalina (Clover)
+
+I recently updated my Hackintosh from Mojave 10.14.6 to Catalina 10.15.7. You can find the latest and final EFI Folder for Mojave [here](https://github.com/kinoute/Hack-Z370-HD3P-i5-8400/releases/tag/v1.0) and browse the repo for this version [here](https://github.com/kinoute/Hack-Z370-HD3P-i5-8400/tree/fe1f54f0f4857de386408216621432f3969e7c6b).
 
 If you're curious, I changed two things in my `config.plist` to fix Catalina:
 
@@ -34,41 +40,36 @@ I built my Hackintosh because I was disappointed with the price of the new Mac M
 
 ## Installation
 
-The installation was pretty straight forward. If you go like me with only the integrated Intel GPU (UHD 630), a Coffee Lake CPU, and this motherboard, just follow the [vanilla guide](https://hackintosh.gitbook.io/-r-hackintosh-vanilla-desktop-guide/) and read the "Coffee Lake" page carefully.
+The installation was pretty straight forward. If you go like me with only the integrated Intel GPU (UHD 630), a Coffee Lake CPU, and this motherboard, just follow the [vanilla guide](https://dortania.github.io/OpenCore-Install-Guide/) and read the "Coffee Lake" page carefully.
 
-You can basically download the config file provided at the end of the vanilla guide, it works almost OOTB. Or you can download mine, see below.
+You can copy my `EFI` folder to your EFI Partition which should work directly. Don't forget to enter your own Serial Number, SystemUUID and MLB. I recommend [ProperTree](https://github.com/corpnewt/ProperTree) to edit the `config.plist` file and enter your own values (these fields are empty in the given config and must be populated to make it work).
 
 ## BIOS
 
 I'm running the BIOS **F14a** version. You can find my BIOS Settings with pictures [here](BIOS/README.md). 
 
-If you are using a version older than F11, be careful if you want to update your BIOS to F11 or newer. They changed something and you have to add an ACPI Patch in your `config.plist` before the update, otherwise macOS won't boot.
-
-This is already done in my `config.plist` available in this repo as of April 30th, 2020.
-
 ## My EFI
 
-* **Clover version**: v5.0 r5119
-* **UEFI Drivers** (now located in `EFI/Clover/drivers/UEFI`):
-    - _ApfsDriverLoader.efi_
-    - _AptioMemoryFix.efi_
+* **OpenCore version**: v0.7.1
+* **UEFI Drivers** (now located in `EFI/OC/Drivers`):
+    - _OpenCanopy.efi_
+    - _OpenRuntime.efi_
     - _HFSPlus.efi_
-* **Kexts** (in `EFI/Clover/kexts/Other`):
+* **Kexts** (in `EFI/OC/Kexts`):
     - _AppleALC.kext_
-    - _IntelMausiEthernet.kext_
+    - _IntelMausi.kext_
     - _Lilu.kext_
     - _SMCProcessor.kext_
     - _SMCSuperIO.kext_
     - _VirtualSMC.kext_
     - _WhateverGreen.kext_
+    - _USBPorts.kext_
 
-If you use my EFI folder & BIOS Settings, you need to generate by yourself your serials and put them in the `config.plist`. You can use [macserial](https://github.com/acidanthera/macserial) to generate serials for the model you picked.
+If you use my EFI folder & BIOS Settings, you need to generate by yourself your serials and put them in the `config.plist`. You can use [macserial](https://github.com/acidanthera/macserial) or [GenSMBIOS](https://github.com/corpnewt/GenSMBIOS) to generate serials for the model you picked.
 
 I first chose `Macmini8,1` because my config was similar to the new Mac Mini model but I recently changed my SMBIOS to `iMac19,2` due to the black screen issue I was having while watching videos in full screen. (**Update:** Apparently this was a bug on macOS and it has been fixed in 10.14.6).
 
 `iMac19,2` seems better for power management and upgradability (in case you want to add a dedicated GPU later). This is the SMBIOS used in this config.
-
-**Note:** I use the [Clover-Minimal Theme](https://github.com/al3xtjames/clover-theme-minimal) in my `config.plist` so if you only download my `config.plist`, be sure to either install this theme or change it to something you already have.
 
 ## What works
 
@@ -76,7 +77,7 @@ I first chose `Macmini8,1` because my config was similar to the new Mac Mini mod
 * Turbo Boost
 * Ethernet
 * USB 2 / USB 3 Ports (see [USB Ports](#usb-ports))
-* HDMI Out (without audio on 10.15, see [Status](#Status))
+* HDMI Out
 * DVI-D Out
 * Sleep / Wake up
 * Sound (see [Sound](#Sound))
