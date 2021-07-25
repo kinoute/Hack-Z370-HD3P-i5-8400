@@ -6,11 +6,11 @@ A Hackintosh running macOS 10.15.7 with a i5-8400 and a Gigabyte Z370-HD3P.
 
 ## Status
 
-### Jul 24, 2021: Clover to Opencore 0.7.1 (Catalina)
+### Jul 24th, 2021: Clover to OpenCore 0.7.1 (Catalina)
 
 I finally switched from Clover to OpenCore in order to prepare the upgrade to macOS Big Sur in a few weeks (if everything is stable). You can find the final EFI Folder running Clover for Catalina 10.15.7 [here](https://github.com/kinoute/Hack-Z370-HD3P-i5-8400/releases/tag/v2.0) or browse the repo for this old version [here](https://github.com/kinoute/Hack-Z370-HD3P-i5-8400/tree/clover-catalina-10-15-7).
 
-### Aug 18, 2020: Mojave to Catalina (Clover)
+### Aug 18th, 2020: Mojave to Catalina (Clover)
 
 I recently updated my Hackintosh from Mojave 10.14.6 to Catalina 10.15.7. You can find the latest and final EFI Folder for Mojave [here](https://github.com/kinoute/Hack-Z370-HD3P-i5-8400/releases/tag/v1.0) and browse the repo for this version [here](https://github.com/kinoute/Hack-Z370-HD3P-i5-8400/tree/fe1f54f0f4857de386408216621432f3969e7c6b).
 
