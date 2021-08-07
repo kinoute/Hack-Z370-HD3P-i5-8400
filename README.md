@@ -1,10 +1,14 @@
 # Hackintosh
 
-A Hackintosh running macOS 10.15.7 with a i5-8400 and a Gigabyte Z370-HD3P.
+A Hackintosh running macOS Big Sur 11.5.1 with a i5-8400 and a Gigabyte Z370-HD3P.
 
-![System spec](https://raw.githubusercontent.com/kinoute/Hack-Z370-HD3P-i5-8400/master/Pictures/system.png)
+![System spec](Pictures/system.png)
 
 ## Status
+
+### Aug 7th, 2021: Catalina to Big Sur (OpenCore)
+
+I smoothly made the upgrade to macOS Big Sur 11.5.1 through the System Preferences after a few days on Catalina and OpenCore. You can download the final EFI Folder running Catalina 10.15.7 with OpenCore 0.7.1 [here](https://ok) or browse the repo for this old version [here](https://github.com/kinoute/Hack-Z370-HD3P-i5-8400/tree/opencore-catalina-10-15-7).
 
 ### Jul 24th, 2021: Clover to OpenCore 0.7.1 (Catalina)
 
@@ -130,7 +134,7 @@ Then restart your Hackintosh. It should look better.
 
 ## Benchmarks
 
-![Geekbench](https://raw.githubusercontent.com/kinoute/Hack-Z370-HD3P-i5-8400/master/Pictures/geekbench.png)
+![Geekbench](Pictures/geekbench.png)
 
-Link: https://browser.geekbench.com/v4/cpu/15697612
+Link: https://browser.geekbench.com/v4/cpu/16277966
 
