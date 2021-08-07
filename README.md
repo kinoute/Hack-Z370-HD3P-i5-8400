@@ -8,7 +8,7 @@ A Hackintosh running macOS Big Sur 11.5.1 with a i5-8400 and a Gigabyte Z370-HD3
 
 ### Aug 7th, 2021: Catalina to Big Sur (OpenCore)
 
-I smoothly made the upgrade to macOS Big Sur 11.5.1 through the System Preferences after a few days on Catalina and OpenCore. You can download the final EFI Folder running Catalina 10.15.7 with OpenCore 0.7.1 [here](https://ok) or browse the repo for this old version [here](https://github.com/kinoute/Hack-Z370-HD3P-i5-8400/tree/opencore-catalina-10-15-7).
+I smoothly made the upgrade to macOS Big Sur 11.5.1 through the System Preferences after a few days on Catalina and OpenCore. You can download the final EFI Folder running Catalina 10.15.7 with OpenCore 0.7.1 [here](https://github.com/kinoute/Hack-Z370-HD3P-i5-8400/releases/tag/v3.0) or browse the repo for this old version [here](https://github.com/kinoute/Hack-Z370-HD3P-i5-8400/tree/opencore-catalina-10-15-7).
 
 ### Jul 24th, 2021: Clover to OpenCore 0.7.1 (Catalina)
 
