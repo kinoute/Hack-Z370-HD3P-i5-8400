@@ -1,6 +1,6 @@
 # Hackintosh
 
-A Hackintosh running macOS Big Sur 11.6 with a i5-8400 and a Gigabyte Z370-HD3P.
+A Hackintosh running macOS Big Sur 11.6.2 with a i5-8400 and a Gigabyte Z370-HD3P.
 
 ![System spec](Pictures/system.png)
 
@@ -20,7 +20,7 @@ I recently updated my Hackintosh from Mojave 10.14.6 to Catalina 10.15.7. You ca
 
 If you're curious, I changed two things in my `config.plist` to fix Catalina:
 
-* I added ` igfxonln=1` to the boot arguments because I was getting a black screen after waking up from sleep. It fixed the problem but AppleALC, the kext that handles the Audio, was crashing my system (Kernel Panic) after waking up.
+* I added `igfxonln=1` to the boot arguments because I was getting a black screen after waking up from sleep. It fixed the problem but AppleALC, the kext that handles the Audio, was crashing my system (Kernel Panic) after waking up.
 * To avoid the Kernel Panic after waking up, I had to disable the audio through HDMI. Since I don't use it, it was not a problem. To do that, I set-up the  `No-hda-gfx` property in my `config.plist` file. It fixed the issue.
 
 **Important:** If you wish to upgrade to Catalina just like I did, don't forget to install/use a recent version of Clover, at least Clover v5.0 r5107. I personally use [Clover v5.0 r5119](https://github.com/Dids/clover-builder/releases/tag/v5.0_r5119).
@@ -29,7 +29,7 @@ If you're curious, I changed two things in my `config.plist` to fix Catalina:
 
 I built my Hackintosh because I was disappointed with the price of the new Mac Mini 2018. Its configuration is close to the new mid-entry Mac Mini but with more RAM (16 instead of 8 Gb). Here are the specs:
 
-- macOS Big Sur 11.6
+- macOS Big Sur 11.6.2
 - Intel i5-8400 (6 cores @ 2.80 Ghz, 3.80 Ghz Turbo Boost)
 - Gigabyte Z370-HD3P
 - Corsair Vengeance LPX 16Gb (2x8Gb) DDR4 2666MHz OC @ 3200 Mhz (CMK16GX4M2A2666C16)
