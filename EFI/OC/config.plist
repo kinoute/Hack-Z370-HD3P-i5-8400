@@ -237,18 +237,23 @@
 			<false/>
 			<key>SyncRuntimePermissions</key>
 			<true/>
+			<key>ResizeAppleGpuBars</key>
+			<integer>-1</integer>
 		</dict>
 	</dict>
 	<key>DeviceProperties</key>
 	<dict>
 		<key>Add</key>
 		<dict>
+			<key>PciRoot(0x0)/Pci(0x1b,0x0)
+</key>
+			<dict>
+				<key>layout-id</key>
+				<integer>1</integer>
+			</dict>
 			<key>PciRoot(0x0)/Pci(0x2,0x0)
 </key>
 			<dict>
-				<key>PciRoot(0x0)/Pci(0x1b,0x0)
-</key>
-				<dict/>
 				<key>AAPL,ig-platform-id</key>
 				<data>BwCbPg==</data>
 				<key>framebuffer-patch-enable</key>
@@ -415,6 +420,24 @@
 				<string>Any</string>
 				<key>BundlePath</key>
 				<string>USBPorts.kext</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string></string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+				<key>Enabled</key>
+				<true/>
+				<key>MinKernel</key>
+				<string>20.0.0</string>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/CtlnaAHCIPort</string>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
+				<string>CtlnaAHCIPort.kext</string>
 			</dict>
 		</array>
 		<key>Block</key>
@@ -774,7 +797,7 @@
 		<key>Debug</key>
 		<dict>
 			<key>AppleDebug</key>
-			<true/>
+			<false/>
 			<key>ApplePanic</key>
 			<true/>
 			<key>DisableWatchDog</key>
@@ -785,10 +808,8 @@
 			<integer>2147483650</integer>
 			<key>SerialInit</key>
 			<false/>
-			<key>SysReport</key>
-			<false/>
 			<key>Target</key>
-			<integer>67</integer>
+			<integer>3</integer>
 		</dict>
 		<key>Entries</key>
 		<array>
@@ -808,6 +829,8 @@
 				<key>Path</key>
 				<string>PciRoot(0x0)/Pci(0x1,0x1)/Pci(0x0,0x0)/NVMe(0x1,11-22-33-44-55-66-77-88)/HD(1,GPT,00000000-0000-0000-0000-000000000000,0x800,0x64000)/\EFI\BOOT\BOOTX64.EFI</string>
 				<key>TextMode</key>
+				<false/>
+				<key>SysReport</key>
 				<false/>
 			</dict>
 		</array>
@@ -889,7 +912,7 @@
 				<key>SystemAudioVolume</key>
 				<data>Rg==</data>
 				<key>boot-args</key>
-				<string>-v keepsyms=1 debug=0x100 alcid=1 igfxonln=1</string>
+				<string>keepsyms=1 debug=0x100 alcid=1 igfxonln=1</string>
 				<key>csr-active-config</key>
 				<data>AAAAAA==</data>
 				<key>prev-lang:kbd</key>
@@ -1023,6 +1046,8 @@
 			<integer>1</integer>
 			<key>PointerSpeedMul</key>
 			<integer>1</integer>
+			<key>GraphicsInputMirroring</key>
+			<true/>
 		</dict>
 		<key>Audio</key>
 		<dict>
@@ -1049,9 +1074,36 @@
 		<true/>
 		<key>Drivers</key>
 		<array>
-			<string>HfsPlus.efi</string>
-			<string>OpenRuntime.efi</string>
-			<string>OpenCanopy.efi</string>
+			<dict>
+				<key>Path</key>
+				<string>HfsPlus.efi</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Arguments</key>
+				<string></string>
+				<key>Comment</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>Path</key>
+				<string>OpenRuntime.efi</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Arguments</key>
+				<string></string>
+				<key>Comment</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>Path</key>
+				<string>OpenCanopy.efi</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Arguments</key>
+				<string></string>
+				<key>Comment</key>
+				<string></string>
+			</dict>
 		</array>
 		<key>Input</key>
 		<dict>
@@ -1099,6 +1151,10 @@
 			<key>TextRenderer</key>
 			<string>BuiltinGraphics</string>
 			<key>UgaPassThrough</key>
+			<false/>
+			<key>UIScale</key>
+			<integer>0</integer>
+			<key>ReconnectGraphicsOnConnect</key>
 			<false/>
 		</dict>
 		<key>ProtocolOverrides</key>
@@ -1163,6 +1219,12 @@
 			<key>TscSyncTimeout</key>
 			<integer>0</integer>
 			<key>UnblockFsConnect</key>
+			<false/>
+			<key>ForceOcWriteFlash</key>
+			<false/>
+			<key>ResizeGpuBars</key>
+			<integer>-1</integer>
+			<key>EnableVmx</key>
 			<false/>
 		</dict>
 		<key>ReservedMemory</key>
