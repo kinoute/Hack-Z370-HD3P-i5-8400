@@ -6,7 +6,7 @@ A Hackintosh running macOS Big Sur 11.6.2 with a i5-8400 and a Gigabyte Z370-HD3
 
 ## Status
 
-## Dec 19th, 2021: Upgrade OpenCore from 0.7.1 to 0.7.6
+### Dec 19th, 2021: Upgrade OpenCore from 0.7.1 to 0.7.6
 
 In order to prepare the installation of macOS 12 Monterey, I spent a few time upgrading OpenCore to the latest version as today, which is 0.7.6. If everything works correctly, I will upgrade macOS in the following weeks.
 
