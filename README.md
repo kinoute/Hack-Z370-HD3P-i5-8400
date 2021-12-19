@@ -6,6 +6,10 @@ A Hackintosh running macOS Big Sur 11.6.2 with a i5-8400 and a Gigabyte Z370-HD3
 
 ## Status
 
+## Dec 19th, 2021: Upgrade OpenCore from 0.7.1 to 0.7.6
+
+In order to prepare the installation of macOS 12 Monterey, I spent a few time upgrading OpenCore to the latest version as today, which is 0.7.6. If everything works correctly, I will upgrade macOS in the following weeks.
+
 ### Aug 7th, 2021: Catalina to Big Sur (OpenCore)
 
 I smoothly made the upgrade to macOS Big Sur 11.5.1 through the System Preferences after a few days on Catalina and OpenCore. You can download the final EFI Folder running Catalina 10.15.7 with OpenCore 0.7.1 [here](https://github.com/kinoute/Hack-Z370-HD3P-i5-8400/releases/tag/v3.0) or browse the repo for this old version [here](https://github.com/kinoute/Hack-Z370-HD3P-i5-8400/tree/opencore-catalina-10-15-7).
@@ -54,13 +58,14 @@ I'm running the BIOS **F14a** version. You can find my BIOS Settings with pictur
 
 ## My EFI
 
-* **OpenCore version**: v0.7.1
+* **OpenCore version**: v0.7.6
 * **UEFI Drivers** (now located in `EFI/OC/Drivers`):
     - _OpenCanopy.efi_
     - _OpenRuntime.efi_
     - _HFSPlus.efi_
 * **Kexts** (in `EFI/OC/Kexts`):
     - _AppleALC.kext_
+    - _CtlnaAHCIPort.kext_
     - _IntelMausi.kext_
     - _Lilu.kext_
     - _SMCProcessor.kext_
