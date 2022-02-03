@@ -6,9 +6,11 @@ A Hackintosh running macOS Monterey 12.2 with a i5-8400 and a Gigabyte Z370-HD3P
 
 ## Status
 
-### Jan 31th, 2021: Big Sur to Monterey (OpenCore 0.7.7)
+### Feb 3rd, 2022: Big Sur to Monterey (OpenCore 0.7.7)
 
 I was able to upgrade from Big Sur to macOS Monterey 12.2 and OC 0.7.7 at the same time. DVI port is not working properly, I had to switch back from `iMac19,2` to `Macmini8,1` as SMBIOS to make it work again, with a few bugs. Don't forget to generate new serials if you do that change too. **If you use the DVI port just like I do, don't upgrade yet to Monterey**. There is definitely something wrong with DVI and Monterey. Hopefully it will get fixed soon.
+
+You can download the final EFI Folder for Big Sur 11.6.3 with OpenCore 0.7.6 [here](https://github.com/kinoute/Hack-Z370-HD3P-i5-8400/releases/tag/v4.0) or browse the repo for this old version [here](https://github.com/kinoute/Hack-Z370-HD3P-i5-8400/tree/opencore-bigsur-11-6-3).
 
 ### Dec 19th, 2021: Upgrade OpenCore from 0.7.1 to 0.7.6
 
