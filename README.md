@@ -64,7 +64,7 @@ I'm running the BIOS **F14a** version. You can find my BIOS Settings with pictur
 
 ## My EFI
 
-* **OpenCore version**: v0.7.8
+* **OpenCore version**: v0.7.9
 * **UEFI Drivers** (now located in `EFI/OC/Drivers`):
     - _OpenCanopy.efi_
     - _OpenRuntime.efi_

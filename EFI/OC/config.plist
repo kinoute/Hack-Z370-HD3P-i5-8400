@@ -435,6 +435,8 @@
 		<key>Block</key>
 		<array>
 			<dict>
+				<key>Strategy</key>
+				<string>Disable</string>
 				<key>Arch</key>
 				<string>Any</string>
 				<key>Comment</key>
@@ -735,7 +737,7 @@
 			<key>ProvideCurrentCpuInfo</key>
 			<false/>
 			<key>SetApfsTrimTimeout</key>
-			<integer>-1</integer>
+			<integer>0</integer>
 			<key>ThirdPartyDrives</key>
 			<false/>
 			<key>XhciPortLimit</key>
@@ -788,6 +790,8 @@
 		</dict>
 		<key>Debug</key>
 		<dict>
+			<key>LogModules</key>
+			<string>*</string>
 			<key>AppleDebug</key>
 			<false/>
 			<key>ApplePanic</key>
