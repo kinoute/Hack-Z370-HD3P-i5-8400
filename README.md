@@ -47,7 +47,7 @@ I built my Hackintosh because I was disappointed with the price of the new Mac M
 - SSD SAMSUNG 830 Series 256 Gb
 - Various old HDDs
 - Apple Wired Keyboard
-- Microsoft Wireless Mobile Mouse 1000
+- Logitech Wireless Mouse M185
 - M-Audio Fast Track Pro
 - Yamaha HS5
 - Philips 244E 24" 1080p monitor
