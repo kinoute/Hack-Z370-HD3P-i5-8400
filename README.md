@@ -58,6 +58,8 @@ The installation was pretty straight forward. If you go like me with only the in
 
 You can copy my `EFI` folder to your EFI Partition which should work directly. Don't forget to enter your own Serial Number, SystemUUID and MLB. I recommend [ProperTree](https://github.com/corpnewt/ProperTree) to edit the `config.plist` file and enter your own values (these fields are empty in the given config and must be populated to make it work).
 
+⚠️ **Note:** You might have trouble during the installation where your PC keeps rebooting or you get stuck. Some users reported ([#8](https://github.com/kinoute/Hack-Z370-HD3P-i5-8400/issues/8)) that the [`SecureBootModel`](https://dortania.github.io/OpenCore-Post-Install/universal/security/applesecureboot.html) setting might be the reason of this. Temporarily disable this setting by changing the value to "Disabled" and try again.
+
 ## BIOS
 
 I'm running the BIOS **F14a** version. You can find my BIOS Settings with pictures [here](BIOS/README.md). 
