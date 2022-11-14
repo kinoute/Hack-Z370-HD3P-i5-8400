@@ -1055,6 +1055,12 @@
 			<integer>0</integer>
 			<key>PointerPollMask</key>
 			<integer>-1</integer>
+			<key>PointerDwellClickTimeout</key>
+			<integer>0</integer>
+			<key>PointerDwellDoubleClickTimeout</key>
+			<integer>0</integer>
+			<key>PointerDwellRadius</key>
+			<integer>0</integer>
 		</dict>
 		<key>Audio</key>
 		<dict>
