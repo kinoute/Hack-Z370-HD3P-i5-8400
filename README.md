@@ -1,6 +1,6 @@
 # Hackintosh
 
-A Hackintosh running macOS Monterey 12.6.2 with a i5-8400 and a Gigabyte Z370-HD3P.
+A Hackintosh running macOS Monterey 12.6.3 with a i5-8400 and a Gigabyte Z370-HD3P.
 
 ![System spec](Pictures/system.png)
 
@@ -39,7 +39,7 @@ If you're curious, I changed two things in my `config.plist` to fix Catalina:
 
 I built my Hackintosh because I was disappointed with the price of the new Mac Mini 2018. Its configuration is close to the new mid-entry Mac Mini but with more RAM (16 instead of 8 Gb). Here are the specs:
 
-- macOS Monterey 12.6.2
+- macOS Monterey 12.6.3
 - Intel i5-8400 (6 cores @ 2.80 Ghz, 3.80 Ghz Turbo Boost)
 - Gigabyte Z370-HD3P
 - Corsair Vengeance LPX 16Gb (2x8Gb) DDR4 2666MHz OC @ 3200 Mhz (CMK16GX4M2A2666C16)
@@ -66,7 +66,7 @@ I'm running the BIOS **F14a** version. You can find my BIOS Settings with pictur
 
 ## My EFI
 
-* **OpenCore version**: v0.8.7
+* **OpenCore version**: v0.8.8
 * **UEFI Drivers** (now located in `EFI/OC/Drivers`):
     * _HFSPlus.efi_
     * _OpenCanopy.efi_
