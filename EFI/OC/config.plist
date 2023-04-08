@@ -1275,6 +1275,8 @@
         <integer>-1</integer>
         <key>EnableVmx</key>
         <false/>
+        <key>ResizeUsePciRbIo</key>
+        <false/>
       </dict>
       <key>ReservedMemory</key>
       <array>
