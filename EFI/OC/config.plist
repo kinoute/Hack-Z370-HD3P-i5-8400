@@ -746,6 +746,8 @@
         <false/>
         <key>ForceAquantiaEthernet</key>
         <false/>
+        <key>DisableIoMapperMapping</key>
+        <false/>
       </dict>
       <key>Scheme</key>
       <dict>
@@ -1205,6 +1207,10 @@
         <integer>0</integer>
         <key>ReconnectGraphicsOnConnect</key>
         <false/>
+        <key>GopBurstMode</key>
+        <false/>
+        <key>InitialMode</key>
+        <string>Auto</string>
       </dict>
       <key>ProtocolOverrides</key>
       <dict>
