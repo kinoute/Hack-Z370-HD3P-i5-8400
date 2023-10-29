@@ -72,7 +72,7 @@ I'm running the BIOS **F14a** version. You can find my BIOS Settings with pictur
 
 ## My EFI
 
-* **OpenCore version**: v0.9.2
+* **OpenCore version**: v0.9.5
 * **UEFI Drivers** (now located in `EFI/OC/Drivers`):
     * _HFSPlus.efi_
     * _OpenCanopy.efi_

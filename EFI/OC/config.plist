@@ -795,6 +795,8 @@
         <integer>5</integer>
         <key>HibernateSkipsPicker</key>
         <false/>
+        <key>InstanceIdentifier</key>
+        <string></string>
       </dict>
       <key>Debug</key>
       <dict>
@@ -1250,6 +1252,8 @@
         <false/>
         <key>UnicodeCollation</key>
         <false/>
+        <key>PciIo</key>
+        <false/>
       </dict>
       <key>Quirks</key>
       <dict>
@@ -1282,6 +1286,8 @@
         <key>EnableVmx</key>
         <false/>
         <key>ResizeUsePciRbIo</key>
+        <false/>
+        <key>ShimRetainProtocol</key>
         <false/>
       </dict>
       <key>ReservedMemory</key>
