@@ -231,6 +231,8 @@
         <true/>
         <key>ResizeAppleGpuBars</key>
         <integer>-1</integer>
+        <key>FixupAppleEfiImages</key>
+        <false/>
       </dict>
     </dict>
     <key>DeviceProperties</key>
