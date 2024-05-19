@@ -72,14 +72,15 @@ I'm running the BIOS **F14a** version. You can find my BIOS Settings with pictur
 
 ## My EFI
 
-* **OpenCore version**: v0.9.7
+* **OpenCore version**: v0.9.9
 * **UEFI Drivers** (now located in `EFI/OC/Drivers`):
+    * _FirmwareSettingsEntry.efi_
     * _HFSPlus.efi_
     * _OpenCanopy.efi_
     * _OpenRuntime.efi_
     * _ResetNvramEntry.efi_
     * _ToggleSipEntry.efi_
-    
+
 * **Kexts** (in `EFI/OC/Kexts`):
     - _AppleALC.kext_
     - _CtlnaAHCIPort.kext_
