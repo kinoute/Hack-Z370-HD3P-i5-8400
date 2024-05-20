@@ -1,10 +1,16 @@
 # Hackintosh
 
-A Hackintosh running macOS Ventura 13.6.7 with a i5-8400 and a Gigabyte Z370-HD3P.
+A Hackintosh running macOS Sonoma 14.5 with a i5-8400 and a Gigabyte Z370-HD3P.
 
 ![System spec](Pictures/system.png)
 
 ## Status
+
+### May 20th, 2024: Ventura to Sonoma (OpenCore 0.9.9)
+
+I was able to upgrade from Ventura to macOS Sonoma 14.5 and OpenCore 0.9.9 at the same time. I had to switch several things in my `config.plist` to do the upgrade and avoid a boot loop during installation – I don't know if all were necessary. I switched `SecureBootModel` to `Disabled`, `DisableSecurityPolicy` to `true`, and added `revpatch=sbvmm` in my boot args. I reverted these changes after the installation.
+
+You can download the final EFI Folder for Ventura 13.6.7 with OpenCore 0.9.9 [here](https://github.com/kinoute/Hack-Z370-HD3P-i5-8400/releases/tag/v6.0) or browse the repo for this old version [here](https://github.com/kinoute/Hack-Z370-HD3P-i5-8400/tree/opencore-ventura-13-6-7).
 
 ### May 28th, 2023: Monterey to Ventura (OpenCore 0.9.2)
 
@@ -45,7 +51,7 @@ If you're curious, I changed two things in my `config.plist` to fix Catalina:
 
 I built my Hackintosh because I was disappointed with the price of the new Mac Mini 2018. Its configuration is close to the new mid-entry Mac Mini but with more RAM (16 instead of 8 Gb). Here are the specs:
 
-- macOS Ventura 13.6.7
+- macOS Sonoma 14.5
 - Intel i5-8400 (6 cores @ 2.80 Ghz, 3.80 Ghz Turbo Boost)
 - Gigabyte Z370-HD3P
 - Corsair Vengeance LPX 16Gb (2x8Gb) DDR4 2666MHz OC @ 3200 Mhz (CMK16GX4M2A2666C16)
