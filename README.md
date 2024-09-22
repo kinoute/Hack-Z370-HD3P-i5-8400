@@ -78,7 +78,7 @@ I'm running the BIOS **F14a** version. You can find my BIOS Settings with pictur
 
 ## My EFI
 
-* **OpenCore version**: v0.9.9
+* **OpenCore version**: v1.0.0
 * **UEFI Drivers** (now located in `EFI/OC/Drivers`):
     * _FirmwareSettingsEntry.efi_
     * _HFSPlus.efi_
