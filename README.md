@@ -1,6 +1,6 @@
 # Hackintosh
 
-A Hackintosh running macOS Sonoma 14.5 with a i5-8400 and a Gigabyte Z370-HD3P.
+A Hackintosh running macOS Sonoma 14.8.3 with a i5-8400 and a Gigabyte Z370-HD3P.
 
 ![System spec](Pictures/system.png)
 
@@ -51,11 +51,12 @@ If you're curious, I changed two things in my `config.plist` to fix Catalina:
 
 I built my Hackintosh because I was disappointed with the price of the new Mac Mini 2018. Its configuration is close to the new mid-entry Mac Mini but with more RAM (16 instead of 8 Gb). Here are the specs:
 
-- macOS Sonoma 14.5
+- macOS Sonoma 14.8.3
 - Intel i5-8400 (6 cores @ 2.80 Ghz, 3.80 Ghz Turbo Boost)
 - Gigabyte Z370-HD3P
 - Corsair Vengeance LPX 16Gb (2x8Gb) DDR4 2666MHz OC @ 3200 Mhz (CMK16GX4M2A2666C16)
 - EVGA 600 W1, 80+ WHITE 600W
+- NVMe WD Blue SN5100 500GB Gen4 – limited as Gen3 on this motherboard
 - SSD SAMSUNG 830 Series 256 Gb
 - Various old HDDs
 - Apple Wired Keyboard
@@ -113,6 +114,7 @@ I first chose `Macmini8,1` because my config was similar to the new Mac Mini mod
 * HDMI Out
 * DVI-D Out
 * Sleep / Wake up
+* PCI Express (NVMe)
 * Sound (see [Sound](#Sound))
 
 ## USB Ports
